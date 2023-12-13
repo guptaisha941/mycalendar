@@ -36,3 +36,104 @@
     transform: rotate(360deg);
   }
 }
+
+/* App.css */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.weekly-scheduler {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.week-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background-color: #3498db;
+  color: #fff;
+}
+
+.week-controls button {
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.week-controls span {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.timezone-selector {
+  padding: 15px;
+}
+
+.timezone-selector label {
+  margin-right: 10px;
+}
+
+.timezone-selector select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.day {
+  border-bottom: 1px solid #ddd;
+  padding: 15px;
+}
+
+.day span {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.day .intervals {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intervals span {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  margin-bottom: 5px;
+}
+
+.intervals input {
+  margin-right: 5px;
+}
+
+.past-interval {
+  color: #ccc;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+  .weekly-scheduler {
+    border-radius: 0;
+  }
+
+  .week-controls {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .week-controls button {
+    margin-top: 10px;
+  }
+}
